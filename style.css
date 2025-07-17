@@ -1,0 +1,126 @@
+body {
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 100em;
+    overflow: hidden;
+}
+
+#hello {
+    color: rgb(1, 194, 1);
+    font-size: 50px;
+    height: 57px;
+}
+
+#main {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+#name_input {
+    background-color: black;
+    color: rgb(1, 194, 1);
+    border-color: rgb(1, 194, 1);
+    font-family: 'Courier New', Courier, monospace;
+
+    margin: 60px 0 0 0;
+    font-size: x-large;
+    display: none;
+    opacity: 0;
+
+}
+
+#name_input:focus {
+
+    outline: none;
+}
+
+#name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+    text-align: center;
+}
+
+#error {
+    color: rgb(1, 194, 1);
+    font-size: 30px;
+    margin-top: 100px;
+    display: inline-block;
+}
+
+#info {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Courier New', Courier, monospace;
+    gap: 80px;
+    margin-top: auto;
+    margin-bottom: 10%;
+}
+
+.info-text {
+    color: rgb(1, 194, 1);
+    font-size: 50px;
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+
+.info-text:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.swal2-html-container a {
+  color: rgb(1, 194, 1); 
+  text-decoration: none; 
+  font-weight: bold; 
+}
+
+.swal2-html-container a:hover {
+  color: #ffffff;
+}
+
+
+
+.my-popup{
+    border-color:rgb(1, 194, 1) ;
+    border-style: solid;
+}
+
+.confirm-btn{
+    background-color: #000000;
+    color:rgb(1, 194, 1) ;
+}
+
+.confirm-btn:hover{
+    background-color: #0e0e0e;
+}
+
+@media (max-width: 768px) {
+    #hello {
+        font-size: 30px;
+    }
+
+    .info-text {
+        font-size: 30px;
+    }
+
+    #info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+}
